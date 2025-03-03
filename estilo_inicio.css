@@ -1,42 +1,38 @@
+*{
+    margin: 0;
+}
+
 body{
     /*padding: 0;
     margin: 0;*/
-    
     background-color: #aed2f7;
 }
 
 #header {
-    width: 98%;
-    margin-left: 0.3em;
+    width: 100%;
     background-color: #448fd9;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    padding: 10px 0;
-    border-radius: 10px;
+    padding: 20px 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    
     position: fixed;
     top:0;
+    left:0;
+    
     z-index: 1000;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 /* Estado reducido cuando se hace scroll , la clase se añade traves de js*/
 #header.shrink {
-    padding: 5px 0;
-    font-size: 16px;
+    padding: 10px 0; 
     background-color: rgba(68, 143, 217, 0.9); /* Un poco de transparencia */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
-    left: 0;
     right: 0;
-    margin-left: 0;
-    width: 100%;
-    border-radius: 0;
 }
 
 #titulo{
@@ -49,7 +45,7 @@ body{
     text-shadow: -1px -1px 1px #000, 
                  1px -1px 1px #000, 
                  -1px 1px 1px #000, 
-                 1px 1px 1px rgb(5, 77, 160),
+                 1px 1px 1px rgb(39, 91, 150),
                  2px 2px 4px #000;
 }
 
@@ -66,7 +62,7 @@ body{
 .nav-a {
     flex: 1;
     padding: 10px 15px;
-    color: rgb(5, 77, 160);
+    color: rgb(34, 115, 208);
     text-decoration: none;
     font-weight: bolder;
     transition: all 0.3s ease-in-out;
@@ -85,19 +81,17 @@ body{
 
 .relative-container {
     background-color: #efebeb;
-    border: rgb(187, 67, 67) solid 0.01em;
     color: #333;
-    padding: 20px;
-    margin-left: 0.9em;
-    margin-top: 1.5em;
-    width: 95%;
+    padding-top: var(--header-height);
+    width: 100%;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    
     z-index:0;
-    margin-top: 120px;
     flex-direction: column;
     align-items: center;
     display: flex;
+    bottom:0;
+    
 }
 
 .relative-container h1{
@@ -105,15 +99,18 @@ body{
     font-size: 26px;
     color: #4a90e2;
     text-align: center;
-    margin: 20px 0;
+    
     position: relative;
     display: inline-block;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
     border-bottom: #4a90e2 solid 1px; 
     padding: 0 24em;
+    padding-top: 20px;
     opacity: 0;
     transform: translateY(10px);
     animation: fadeIn 3s ease-out forwards;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* los align-items de infoBody y tipo son para centrar los elementos y apilarlos de forma horizontal*/
@@ -124,13 +121,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+
 }
 
 .tiposInfo{
     text-align: center;
     border-radius: 8px;
-    border: #5b626a solid 2px;
-    padding: 0 10px;
+    border: #448fd9  solid 2px;
+    padding: 20px;
     display: block;
     width: 40%;
     margin-bottom: 1em;
@@ -141,33 +140,33 @@ body{
 .relative-container h2{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 26px;
-    color: #96A4B3;
+    color: #bb4949;
     text-align: center;
     padding-left: 1em;
+    text-shadow: -1px -1px 1px #000, 
+                 1px -1px 1px #000, 
+                 -1px 1px 1px #000, 
+                 1px 1px 1px #000,
+                 2px 2px 4px #000;
 }
 
 .relative-container div h5{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    color: #5b626a;
+    color: #448fd9;
     text-align: center;
-    margin-left: 4em;
-    padding-right: 2em;
+    margin-left: 2em;
+    
+    padding-top: 20px;
     display: inline-block;
     position: relative;
+    border-bottom: 2px #bb4949 solid;
+    
 }
 
-.relative-container div h5::after{ /*borde inferior en la palabra por el padding*/
-    content: '';
-    width: 100%;
-    height: 1px;
-    bottom: -3px;
-    right: 10px;
-    position: absolute;
-    background-color: #939393;
+.relative-container p{
+    padding: 30px;
 }
-
-
 @keyframes fadeInUp {
     from {
         opacity: 0;

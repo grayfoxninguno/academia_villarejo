@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const header = document.getElementById("header");
+    const relativeContainer = document.querySelector(".relative-container");
 
     window.addEventListener("scroll", function () {
         if (window.scrollY > 50) {
@@ -8,4 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
             header.classList.remove("shrink");
         }
     });
+    
+    function actualizarPadding() {
+        document.documentElement.style.setProperty('--header-height', header.offsetHeight + 'px');
+    }
+
+    actualizarPadding();
+    window.addEventListener("resize", actualizarPadding);
 });
