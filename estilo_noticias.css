@@ -7,7 +7,7 @@
     z-index:0;
     flex-direction: column;
     display: flex;
-    bottom:0;
+    bottom: 0;
 }
 
 .contenidoNoticias h1 {
@@ -19,7 +19,6 @@
     border-bottom: 2px solid #4a90e2;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
     padding-top: 30px;
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -28,6 +27,11 @@
     padding: 20px;
     display: inline-flex;
     align-items: flex-start;
+    border: #bb4949 2px solid;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    background-color: #6e9fd7;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .noticia img {
@@ -35,12 +39,11 @@
     margin-right: 20px;
     border-radius: 8px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
-    border: 2px solid #4a90e2;
-
+    border: 2px solid #3484e0;
 }
 
 .noticiaTexto {
-    width: 70%;
+    width: 65%;
 }
 
 .noticiaTexto h2 {
