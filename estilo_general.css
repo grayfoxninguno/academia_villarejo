@@ -1,9 +1,11 @@
 *{
     margin: 0;
+    
 }
 
 body{
     background-color: #aed2f7;
+    bottom:0;
 }
 
 #header {
@@ -85,4 +87,73 @@ body{
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+    background-color: #448fd9;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    bottom:0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+#footer nav div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#textoFooter{
+    text-align: center;
+    color: rgb(25, 96, 177);
+    text-shadow: -1px -1px 1px #000, 
+                 1px -1px 1px #000, 
+                 -1px 1px 1px #000, 
+                 1px 1px 1px rgb(39, 91, 150),
+                 2px 2px 4px #000;
+    font-size: 20px;
+}
+
+#redes{
+    text-align: left;
+}
+
+#redes nav{
+    display: inline-block;
+    padding: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+#redes nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#redes nav a:link, a:visited, a:active, a::after, a::before{
+    text-decoration:none;
+}
+
+#redes nav img{
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+}
+
+#redes nav p{
+    color: rgb(34, 115, 208);
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: -1px -1px 1px #000, 
+                 1px -1px 1px #000, 
+                 -1px 1px 1px #000, 
+                 1px 1px 1px rgb(39, 91, 150),
+                 2px 2px 4px #000;
+    
 }
