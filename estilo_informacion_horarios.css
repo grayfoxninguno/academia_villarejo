@@ -1,5 +1,5 @@
 .relative-container {
-    background-color: #f5dddd;
+    background-color: #c5daf1;
     color: #333;
     padding-top: var(--header-height);
     width: 100%;
@@ -18,7 +18,11 @@
     text-align: center;
     display: inline-block;
     border-bottom: 2px solid #4a90e2;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    text-shadow: -1px -1px 1px #000, 
+                 1px -1px 1px #000, 
+                 -1px 1px 1px #000, 
+                 1px 1px 1px #000,
+                 2px 2px 4px #000;
     margin-bottom: 30px;
 }
 
@@ -39,7 +43,7 @@
 .tiposInfo{
     text-align: center;
     border-radius: 8px;
-    background-color: #c4c0c0;
+    background-color: #f7d5d5;
     border: #448fd9  solid 2px;
     padding: 30px;
     display: block;

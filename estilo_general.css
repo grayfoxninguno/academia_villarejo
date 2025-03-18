@@ -31,7 +31,6 @@ body{
     position: fixed;
     top:0;
     left:0;
-    
     z-index: 1000;
     transition: all 0.3s ease-in-out;
 }
@@ -98,6 +97,7 @@ body{
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
+    border: rgb(34, 115, 208) 1px solid;
 }
 
 #footer {
@@ -108,16 +108,14 @@ body{
     font-weight: bold;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     align-items: center;
-    display: flex;
+    display: inline-flex;
     z-index: 1000;
     transition: all 0.3s ease-in-out;
-    text-align: center;
     bottom: 0;
 }
 
 #footer nav div{
-    display: inline-block;
-    vertical-align: middle;
+    display: inline-flex;
 }
 
 #textoFooter{
@@ -129,10 +127,12 @@ body{
                  1px 1px 1px rgb(39, 91, 150),
                  2px 2px 4px #000;
     font-size: 20px;
+    margin-right: 50px;
+    width: 15%;
 }
 
 #textoFooter2{
-    text-align: left;
+    
     color: rgb(34, 115, 208);
     text-shadow: -1px -1px 1px #000, 
                  1px -1px 1px #000, 
@@ -141,15 +141,39 @@ body{
                  2px 2px 4px #000;
     font-size: 20px;
     margin-left: 70px;
+    width: 15%;
 }
 
 #redes{
-    text-align: left;
+    text-align: center;
+    width: 70%;
+}
+
+.nav-b {
+    flex: 1;
+    padding: 10px 15px;
+    color: rgb(34, 115, 208);
+    text-decoration: none;
+    font-weight: bolder;
+    transition: all 0.01s ease-in-out;
+    text-shadow: -1px -1px 1px #000, 
+                 1px -1px 1px #000, 
+                 -1px 1px 1px #000, 
+                 1px 1px 1px rgb(5, 77, 160),
+                 2px 2px 4px #000;
+    
+}
+
+.nav-b:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border: rgb(34, 115, 208) 1px solid;
 }
 
 #redes nav{
     display: inline-block;
-    padding: 2em;
+    padding: 0.7em;
     align-items: center;
     justify-content: center;
 }
@@ -158,7 +182,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #redes nav a:link, a:visited, a:active, a::after, a::before{

@@ -1,5 +1,5 @@
 .contenidoNoticias {
-    background-color: #f5dddd;
+    background-color: #c5daf1;
     color: #333;
     padding-top: var(--header-height);
     width: 100%;
@@ -17,9 +17,13 @@
     text-align: center;
     display: inline-block;
     border-bottom: 2px solid #4a90e2;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
     padding-top: 30px;
     margin-bottom: 20px;
+    text-shadow: -1px -1px 1px #000, 
+                 1px -1px 1px #000, 
+                 -1px 1px 1px #000, 
+                 1px 1px 1px #000,
+                 2px 2px 4px #000;
 }
 
 .noticia {
