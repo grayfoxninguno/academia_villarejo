@@ -1,87 +1,80 @@
 .contenidoNoticias {
-    background-color: #c5daf1;
-    color: #333;
-    padding-top: var(--header-height);
-    width: 100%;
-    align-items: center;
-    z-index:0;
-    flex-direction: column;
-    display: flex;
-    bottom: 0;
+  background-color: #c5daf1;
+  color: #333;
+  padding-top: var(--header-height);
+  width: 100%;
+  align-items: center;
+  z-index: 0;
+  flex-direction: column;
+  display: flex;
+  bottom: 0;
 }
 
 .contenidoNoticias h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 26px;
-    color: #4a90e2;
-    text-align: center;
-    display: inline-block;
-    border-bottom: 2px solid #4a90e2;
-    padding-top: 30px;
-    margin-bottom: 20px;
-    text-shadow: -1px -1px 1px #000, 
-                 1px -1px 1px #000, 
-                 -1px 1px 1px #000, 
-                 1px 1px 1px #000,
-                 2px 2px 4px #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  color: #4a90e2;
+  text-align: center;
+  display: inline-block;
+  border-bottom: 2px solid #4a90e2;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+    1px 1px 1px #000, 2px 2px 4px #000;
 }
 
 .noticia {
-    width: 80%;
-    padding: 20px;
-    display: inline-flex;
-    align-items: flex-start;
-    border: #bb4949 2px solid;
-    border-radius: 8px;
-    margin-bottom: 30px;
-    background-color: #6e9fd7;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  padding: 20px;
+  display: inline-flex;
+  align-items: flex-start;
+  border: #bb4949 2px solid;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  background-color: #6e9fd7;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .noticia img {
-    width: 30%;
-    margin-right: 20px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
-    border: 2px solid #3484e0;
+  width: 30%;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  border: 2px solid #3484e0;
 }
 
 .noticiaTexto {
-    width: 65%;
+  width: 65%;
 }
 
 .noticiaTexto h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 26px;
-    color: #bb4949;
-    border-bottom: #bb4949 1px solid;
-    display: inline;
-    text-align: left;
-    text-shadow: -1px -1px 1px #000, 
-                 1px -1px 1px #000, 
-                 -1px 1px 1px #000, 
-                 1px 1px 1px #000;
-    margin-bottom: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 26px;
+  color: #bb4949;
+  border-bottom: #bb4949 1px solid;
+  display: inline;
+  text-align: left;
+  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+    1px 1px 1px #000;
+  margin-bottom: 20px;
 }
 
 .noticiaTexto h6 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color: #4a90e2;
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 0;
-    text-shadow: -1px -1px 1px #000, 
-                 1px -1px 1px #000, 
-                 -1px 1px 1px #000, 
-                 1px 1px 1px #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #4a90e2;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+    1px 1px 1px #000;
 }
 
 .noticiaTexto p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    color: #333;
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #333;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
