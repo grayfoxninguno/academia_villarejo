@@ -34,12 +34,12 @@
 
 .localizaciones h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 20px;
-  color: #bb4949;
+  font-size: 24px;
+  color: #4a90e2;
   text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
     1px 1px 1px #000, 2px 2px 4px #000;
   display: inline-block;
-  border-bottom: #bb4949 2px solid;
+  border-bottom: #4a90e2 2px solid;
   padding-bottom: 5px;
   text-align: left;
 }

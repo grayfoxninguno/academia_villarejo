@@ -26,6 +26,7 @@
     1px 1px 1px #000, 2px 2px 4px #000;
   padding-top: 30px;
   margin-bottom: 20px;
+  margin-right: 100px;
 }
 
 .contacto {
@@ -94,7 +95,8 @@ button:hover {
     to bottom,
     #4a90e2 16%,
     #4a90e2 17%,
-    #ce8f8f 17%,
+    #222 17%,
+    #ce8f8f 18%,
     #ce8f8f 100%
   );
   color: #333;
