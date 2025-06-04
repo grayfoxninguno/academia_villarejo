@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url(imagenes/fondo.png);
+  background-repeat: repeat;
+  background-size: auto;
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}
+
+#header {
+  width: 100%;
+  background-color: #448fd9;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+}
+
+#titulo {
+  font-size: clamp(8px, 3.5vw, 20px);
+  width: 35%;
+  text-align: left;
+  color: rgb(230, 230, 230);
+  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+    1px 1px 1px rgb(39, 91, 150), 2px 2px 4px #000;
+}
+
+#directorio {
+  width: 60%;
+  text-align: right;
+}
+
+#header,
+div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  position: relative;  
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.nav-links {
+  display: ruby;
+}
+
+
+/* Botón hamburguesa oculto por defecto */
+.menu-toggle {
+  display: none;
+  font-size: 25px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-a {
+  padding: 10px 15px;
+  color: rgb(230, 230, 230);
+  text-decoration: none;
+  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+    1px 1px 1px rgb(5, 77, 160), 2px 2px 4px #000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  outline: rgb(34, 115, 208) 1px solid;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#footer {
+  margin-top: auto;
+  width: 100%;
+  background-color: #3f3f3f;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  z-index: 1000;
+}
+
+#footer nav div {
+  display: inline-flex;
+}
+
+#redes {
+  text-align: center;
+}
+
+.nav-b {
+  flex: 1;
+  padding: 10px 15px;
+  color: rgb(34, 115, 208);
+  text-decoration: none;
+  font-weight: bolder;
+  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+    1px 1px 1px rgb(5, 77, 160), 2px 2px 4px #000;
+}
+
+.nav-b:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  outline: rgb(208, 34, 34) 1px solid;
+}
+
+#redes nav {
+  display: inline-block;
+  padding: 0.7em;
+  align-items: center;
+  justify-content: center;
+}
+
+#redes nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#redes nav a:link,
+a:visited,
+a:active,
+a::after,
+a::before {
+  text-decoration: none;
+}
+
+#redes nav img {
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 7px;
+}
+
+#redes nav p {
+  color: rgb(230, 230, 230);
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+    1px 1px 1px rgb(39, 91, 150), 2px 2px 4px #000;
+}
+
+/* Responsive */
+@media (max-width: 1220px) {
+
+  #directorio{
+    width: 15%;
+  }
+
+  #titulo{
+    width: 80%;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+    color: rgb(34, 115, 208);
+    background-color: #c5daf1;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .menu-toggle:hover {
+    background-color: #b1b1b1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    outline: rgb(34, 115, 208) 1px solid;
+    border-radius: 5px;
+  }
+
+  .nav-links {
+    opacity: 0;
+    transform: scaleY(0.95);
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    background: #e0e0e0;
+    position: absolute;
+    width: 200px;
+    padding: 0px;
+    top: 50px;
+    outline: #448fd9 2px solid;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+  }
+
+  .nav-a {
+    padding: 10px 15px;
+    color: #448fd9;
+    text-decoration: none;
+    text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+      1px 1px 1px rgb(5, 77, 160), 2px 2px 4px #000;
+  }
+
+  .nav-a:hover {
+    color: #e0e0e0;
+    background-color: #448fd9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    outline: rgb(34, 115, 208) 1px solid;
+    border-radius: 5px;
+  }
+
+  .nav-links.show {
+    opacity: 1;
+    transform-origin: top;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: scaleY(1);
+    pointer-events: all;
+  }
+}

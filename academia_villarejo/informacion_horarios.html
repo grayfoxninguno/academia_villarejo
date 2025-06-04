@@ -13,15 +13,18 @@
   </head>
   <body>
     <header id="header">
-      <div id="titulo"><h2>La Academia de Villarejo / Carabaña</h2></div>
+      <div id="titulo"><h2>La Academia de Villarejo</h2></div>
       <div id="directorio">
-        <nav>
-          <a href="./index.html" class="nav-a">Inicio</a>
-          <a href="./noticias.html" class="nav-a">Noticias</a>
-          <a href="./informacion_horarios.html" class="nav-a">Información</a>
-          <a href="./summer.html" class="nav-a">Summer</a>
-          <a href="./sobre_nosotros.html" class="nav-a">Sobre Nosotros</a>
-          <a href="./contactos.html" class="nav-a">Contactos</a>
+        <nav class="nav">
+          <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+          <ul class="nav-links">
+            <li><a href="./index.html" class="nav-a">Inicio</a></li>
+            <li><a href="./noticias.html" class="nav-a">Noticias</a></li>
+            <li><a href="./informacion_horarios.html" class="nav-a">Horarios</a></li>
+            <li><a href="./summer.html" class="nav-a">Summer</a></li>
+            <li><a href="./sobre_nosotros.html" class="nav-a">Sobre Nosotros</a></li>
+            <li><a href="./contactos.html" class="nav-a">Contactos</a></li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -86,45 +89,27 @@
       </div>
     </section>
     <footer id="footer">
-      <div id="textoFooter2">
-        <p>Academia Carabaña</p>
-      </div>
       <div id="redes">
         <nav>
-          <div class="nav-a">
-            <a href="https://www.youtube.com/">
-              <p>Twitter</p>
-              <img src="./imagenes/x.png" alt="Twitter" />
-            </a>
-          </div>
-          <div class="nav-a">
-            <a href="https://www.youtube.com/">
-              <p>Facebook</p>
-              <img src="./imagenes/x.png" alt="Facebook" />
-            </a>
-          </div>
-          <div class="nav-a">
-            <a href="https://www.youtube.com/">
-              <p>Linkedin</p>
-              <img src="./imagenes/x.png" alt="Linkedin" />
-            </a>
-          </div>
-          <div class="nav-a">
-            <a href="https://www.youtube.com/">
-              <p>Instagram</p>
-              <img src="./imagenes/x.png" alt="Instagram" />
-            </a>
-          </div>
-          <div class="nav-a">
-            <a href="https://www.youtube.com/">
+          <div>
+            <a class="nav-b" href="https://www.youtube.com/@laacademiavillarejo3166">
               <p>Youtube</p>
-              <img src="./imagenes/x.png" alt="Youtube" />
+              <img src="./imagenes/youtube.png" alt="Youtube" />
+            </a>
+          </div>
+          <div>
+            <a class="nav-b" href="https://www.facebook.com/laacademiavi/?locale=es_ES">
+              <p>Facebook</p>
+              <img src="./imagenes/facebook.png" alt="Facebook" />
+            </a>
+          </div>
+          <div>
+            <a class="nav-b" href="https://www.instagram.com/laacademiavillarejo/?hl=es">
+              <p>Instagram</p>
+              <img src="./imagenes/instagram.png" alt="Instagram" />
             </a>
           </div>
         </nav>
-      </div>
-      <div id="textoFooter">
-        <p>Academia Villarejo</p>
       </div>
     </footer>
     <script src="./eventos.js"></script>
