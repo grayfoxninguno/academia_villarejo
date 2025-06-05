@@ -19,31 +19,38 @@
 
 .contenidoContactos h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 26px;
-  color: #4a90e2;
+  font-size: clamp(25px, 5vw, 45px);
+  color: #e24a4a;
   text-align: center;
   display: inline-block;
-  border-bottom: 2px solid #4a90e2;
   text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
     1px 1px 1px #000, 2px 2px 4px #000;
-  padding-top: 30px;
-  margin-bottom: 20px;
-  margin-right: 100px;
+  margin-bottom: 30px;
 }
 
 .contacto {
-  width: 80%;
-  padding: 20px;
-  display: inline-flex;
-  align-items: flex-start;
-  margin-bottom: 30px;
+  width: 800px;
+  padding: 10px 20px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-evenly; /* empuja los hijos a los extremos */
+  align-items: baseline;            /* opcional: los alinea verticalmente */
+  width: 100%;                    /* o cualquier ancho deseado */
 }
 
 #emailForm {
   width: 40%;
-  padding: 20px;
   color: #333;
-  margin-left: 20px;
+  padding: 20px;
+  width: 400px;
+  height: 300px;
+}
+
+#message{
+  resize: none;
+  height: 100px;
+  width: 100%;  /* o cualquier altura fija */
+  overflow: auto;
 }
 
 label {
@@ -58,8 +65,7 @@ label {
 }
 
 input,
-textarea,
-button {
+textarea{
   border-radius: 8px;
   padding: 10px;
 }
@@ -68,31 +74,17 @@ input,
 textarea {
   display: block;
   width: 100%;
-  background-color: #4a90e2;
+  background-color: #ffffff;
   color: #000;
   border: 2px solid #bb4949;
   margin-top: 5px;
   padding: 5px;
 }
 
-button {
-  background-color: #4a90e2;
-  color: #333;
-  border: 2px solid #bb4949;
-  padding: 5px 10px;
-  margin-top: 10px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #346092;
-  color: #ffffff;
-}
-
 .contactoTexto {
-  width: 60%;
+  width: 400px;
+  height: 300px;
   padding: 10px;
-  margin-left: 40px;
   background: linear-gradient(
     to bottom,
     #4a90e2 16%,
@@ -106,7 +98,7 @@ button:hover {
   border-radius: 8px;
 }
 
-.contactoTexto h2 {
+.contactoTexto h2, #emailForm h2{
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 26px;
   color: #bb4949;
@@ -115,7 +107,7 @@ button:hover {
     1px 1px 1px #000, 2px 2px 4px #000;
 }
 
-.contactoTexto h3 {
+.contactoTexto div h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   color: #448fd9;
@@ -128,10 +120,10 @@ button:hover {
     1px 1px 1px rgb(39, 91, 150), 2px 2px 4px #000;
 }
 
-.contactoTexto p {
+.contactoTexto #informacion p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  color: #bb4949;
+  color: #e2e2e2;
   text-align: left;
   margin-right: 10px;
   margin-left: 40px;
@@ -140,10 +132,10 @@ button:hover {
   margin-bottom: 10px;
 }
 
-.contactoTexto a {
+.contactoTexto #informacion a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  color: #448fd9;
+  color: #e2e2e2;
   text-align: left;
   margin-right: 10px;
   padding-top: 20px;
@@ -152,6 +144,98 @@ button:hover {
     1px 1px 1px rgb(39, 91, 150), 2px 2px 4px #000;
 }
 
-.contactoTexto a:hover {
+.contactoTexto #informacion a:hover {
+  color: #448fd9;
+}
+
+.localizaciones {
+  width: 90%;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.localizaciones h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 24px;
+  color: #4a90e2;
+  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+    1px 1px 1px #000, 2px 2px 4px #000;
+  display: inline-block;
+  border-bottom: #4a90e2 2px solid;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.localizacion {
+  width: 80%;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  border: #3a3636 4px solid;
+  background: linear-gradient(
+    90deg,
+    #4a90e2 46%,
+    #4a90e2 47%,
+    #bb4949 47%,
+    #bb4949 100%
+  );
+}
+
+.textoLocalizacion {
+  width: 45%;
+  text-align: left;
+  color: #333;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.textoLocalizacion h4 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
   color: #bb4949;
+  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+    1px 1px 1px #000, 2px 2px 4px #000;
+  display: inline-block;
+  border-bottom: #bb4949 2px solid;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.textoLocalizacion p {
+  padding-top: 10px;
+  text-align: left;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  color: #3a3636;
+}
+
+.localizacion iframe {
+  border-radius: 8px;
+  width: 50%;
+  margin-right: 20px;
+  margin-left: 12px;
+  border: #4a90e2 2px solid;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 100px) {
+  .contacto{
+    display: contents;
+  }
+
+  #emailForm{
+    margin-bottom: 50px;
+  }
+
+  .contactoTexto{
+    margin-bottom: 50px;
+  }
 }
