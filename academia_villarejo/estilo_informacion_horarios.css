@@ -1,7 +1,6 @@
 .relative-container {
   background-color: hsl(211, 61%, 86%, 0.8);
   color: #333;
-  width: 95%;
   align-items: center;
   z-index: 0;
   flex-direction: column;
@@ -9,22 +8,22 @@
   bottom: 0;
   border-radius: 8px;
   border: #3484e0 2px solid;
+  width: calc(100% - 4%);
   margin-left: 2%;
   margin-right: 2%;
-  margin-top: 100px;
+  margin-top: calc(var(--header-height) + 20px);
   margin-bottom: 30px;
-  padding-top: calc(var(--header-height));
   padding-bottom: 20px;
   
 }
 
 .relative-container h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 26px;
-  color: #4a90e2;
+  font-size: clamp(30px, 3.5vw, 40px);
+  color: #e24a4a;
   text-align: center;
   display: inline-block;
-  border-bottom: 2px solid #4a90e2;
+  border-bottom: 2px solid #e24a4a;
   text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
     1px 1px 1px #000, 2px 2px 4px #000;
   margin-bottom: 30px;
@@ -36,8 +35,7 @@
 .infoBody {
   width: 100%;
   text-align: center;
-  display: flex;
-  flex-direction: column;
+  display: block;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -50,38 +48,86 @@
   border: #448fd9 solid 2px;
   padding: 30px;
   display: block;
-  width: 45%;
+  width: 90%;
   margin-bottom: 1em;
   align-items: center;
   margin: 0 auto 1em auto;
 }
 
 .relative-container h2 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 26px;
-  color: #bb4949;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: clamp(24px, 3.5vw, 30px);
+  color: #3484e0;
   text-align: center;
-
+  display: inline-block;
+  margin: 0 auto 20px auto;
+  border-bottom: 2px solid #448fd9; 
   text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
     1px 1px 1px #000, 2px 2px 4px #000;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
-.relative-container div h5 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color: #448fd9;
-  text-align: center;
-  margin-right: 10px;
-  padding-top: 20px;
+.h5-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.h5-wrapper h5 {
   display: inline-block;
-  border-bottom: 2px #bb4949 solid;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(18px, 3.5vw, 24px);
+  color: #448fd9;
+  border-bottom: 2px solid #bb4949;
+  padding-bottom: 5px;
+  text-align: center;
 }
 
 .relative-container p {
   padding-top: 30px;
   text-align: inherit;
-  font-size: 14px;
+  font-size: clamp(16px, 3.5vw, 20px);
   font-family: inherit;
   font-weight: inherit;
   color: #435050;
+}
+
+@media (max-width: 1150px) {
+  .relative-container {
+    width: 100%;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    bottom: 0;
+    margin-top: calc(var(--header-height));
+    margin-bottom: 0;
+  }
+
+  .tiposInfo {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .relative-container h2 {
+    display: inline-block;        
+    margin: 0 auto 20px auto;            
+    border-bottom: 2px solid #448fd9;    
+    font-size: clamp(24px, 3.5vw, 30px);
+    color: #3484e0;
+    text-align: center;
+    text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+                1px 1px 1px #000, 2px 2px 4px #000;
+  }
+
+  .relative-container .tiposInfo h5 {
+    display: block; /* Cada h5 ocupa su propia línea */
+    text-align: center;        
+    border-bottom: 2px solid #bb4949;
+    padding-bottom: 5px;
+    font-size: 16px;
+    color: #448fd9;
+  }
 }
