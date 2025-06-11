@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <link rel="stylesheet" type="text/css" href="./estilo_general.css" />
-    <link rel="stylesheet" type="text/css" href="./estilo_sobre_nosotros.css" />
+    <link rel="stylesheet" type="text/css" href="./estilo_contactos.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Academia Villarejo</title>
@@ -24,27 +24,53 @@
         </nav>
       </div>
     </header>
-    <section class="contenidoNosotros">
-
-      <div class="carousel">
-        <div class="carousel-images" id="carouselImages">
-          <img src="imagenes/pasillo_entrada.jpg" alt="Imagen 1" onclick="abrirModal(this.src)">
-          <img src="imagenes/entrada.jpg" alt="Imagen 1" onclick="abrirModal(this.src)">
-          <img src="imagenes/pasillo.jpg" alt="Imagen 2" onclick="abrirModal(this.src)">
-          <img src="imagenes/aula.jpg" alt="Imagen 3" onclick="abrirModal(this.src)">
-        </div>
-        <div class="carousel-buttons">
-          <button onclick="moverCarrusel(-1)">❮</button>
-          <button onclick="moverCarrusel(1)">❯</button>
+    <section class="contenidoContactos">
+      <h1>Contacto</h1>
+      <div class="contacto">
+        <form id="emailForm">
+          <h2>Mandanos un mensaje</h2>
+          <label>
+            Tu Correo:
+            <input type="email" id="email" required />
+          </label>
+          <label>
+            Mensaje:
+            <textarea id="message" required></textarea>
+          </label>
+          <button type="submit">Enviar</button>
+        </form>
+        <div class="contactoTexto">
+          <h2>Información de Contacto</h2>
+          <div id="informacion">
+            <h3>Correo</h3>
+            <a href="mailto:">info@laacademiavillarejo.es</a>
+            <h3>Telefono</h3>
+            <p>630235086</p>
+          </div>
         </div>
       </div>
 
-      <!-- Modal -->
-      <div class="modal" id="modal" onclick="cerrarModal()">
-        <img id="modalImg" src="" alt="Imagen ampliada">
+      <h1>Donde encontrarnos</h1>
+      <div class="localizaciones">
+        <div class="localizacion">
+          <div class="textoLocalizacion">
+            <h4>Academia Villarejo</h4>
+            <p>
+              Dirección:
+              <br>C. de Samuel Baltés, 7, 28590 Villarejo de Salvanés, Madrid
+            </p>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d68710.36516608128!2d-3.784591218137766!3d40.43990355860782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418654e27aa72b%3A0x7be48895f31c885c!2sAravaca!5e0!3m2!1ses!2ses!4v1742296542841!5m2!1ses!2ses"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
-
-      
     </section>
     <footer id="footer">
       <div id="redes">

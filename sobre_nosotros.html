@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./estilo_general.css" />
+    <link rel="stylesheet" type="text/css" href="./estilo_sobre_nosotros.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academia Villarejo</title>
+  </head>
+  <body>
+    <header id="header">
+      <div id="titulo"><h2>La Academia de Villarejo</h2></div>
+      <div id="directorio">
+        <nav class="nav">
+          <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+          <ul class="nav-links">
+            <li><a href="./index.html" class="nav-a">Inicio</a></li>
+            <li><a href="./noticias.html" class="nav-a">Noticias</a></li>
+            <li><a href="./informacion_horarios.html" class="nav-a">Horarios</a></li>
+            <li><a href="./summer.html" class="nav-a">Summer</a></li>
+            <li><a href="./sobre_nosotros.html" class="nav-a">Sobre Nosotros</a></li>
+            <li><a href="./contactos.html" class="nav-a">Contactos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="contenidoNosotros">
+
+      <h1>Sobre Nosotros</h1>
+
+      <div class="seccionGeneral">
+        <h2>
+          ¿Qué es Lorem Ipsum?<br><br>
+          Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+          Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) 
+          desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien 
+          ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 
+          "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye 
+          versiones de Lorem Ipsum.<br><br><br>
+
+          ¿Por qué lo usamos?<br><br>
+          Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar 
+          Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". 
+          Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, 
+          y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han 
+          evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+        </h2>
+
+        <div class="carousel">
+          <div class="carousel-images" id="carouselImages">
+            <img src="imagenes/pasillo_entrada.jpg" alt="Imagen 1" onclick="abrirModal(this.src)">
+            <img src="imagenes/entrada.jpg" alt="Imagen 1" onclick="abrirModal(this.src)">
+            <img src="imagenes/pasillo.jpg" alt="Imagen 2" onclick="abrirModal(this.src)">
+            <img src="imagenes/aula.jpg" alt="Imagen 3" onclick="abrirModal(this.src)">
+          </div>
+          <div class="carousel-buttons">
+            <button onclick="moverCarrusel(-1)">❮</button>
+            <button onclick="moverCarrusel(1)">❯</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal" id="modal" onclick="cerrarModal()">
+        <img id="modalImg" src="" alt="Imagen ampliada">
+      </div>
+
+      
+    </section>
+    <footer id="footer">
+      <div id="redes">
+        <nav>
+          <div>
+            <a class="nav-b" href="https://www.youtube.com/@laacademiavillarejo3166">
+              <p>Youtube</p>
+              <img src="./imagenes/youtube.png" alt="Youtube" />
+            </a>
+          </div>
+          <div>
+            <a class="nav-b" href="https://www.facebook.com/laacademiavi/?locale=es_ES">
+              <p>Facebook</p>
+              <img src="./imagenes/facebook.png" alt="Facebook" />
+            </a>
+          </div>
+          <div>
+            <a class="nav-b" href="https://www.instagram.com/laacademiavillarejo/?hl=es">
+              <p>Instagram</p>
+              <img src="./imagenes/instagram.png" alt="Instagram" />
+            </a>
+          </div>
+        </nav>
+      </div>
+    </footer>
+    <script src="./eventos.js"></script>
+  </body>
+</html>

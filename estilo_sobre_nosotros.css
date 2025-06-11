@@ -3,7 +3,6 @@
   color: #333;
   width: 95%;
   align-items: center;
-  z-index: 0;
   flex-direction: column;
   display: flex;
   bottom: 0;
@@ -13,27 +12,51 @@
   margin-right: 2%;
   margin-top: 100px;
   margin-bottom: 30px;
-  padding-top: calc(var(--header-height));
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 
 .contenidoNosotros h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 30px;
-  color: #4a90e2;
+  font-size: clamp(28px, 5vw, 45px);
+  color: #e24a4a;
   text-align: center;
-  border-bottom: 2px solid #4a90e2;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
-  padding-top: 30px;
+  display: inline-block;
   text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
     1px 1px 1px #000, 2px 2px 4px #000;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.seccionGeneral{
+  width: 90%;
+  padding: 40px;
+  display: grid;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border: #3484e0 2px solid;
+}
+
+.seccionGeneral h2{
+  flex: 1;
+  margin-top: 15px;
+  width: 100%;
+  font-size: clamp(15px, 2.8vw, 30px);
+  color: #2071a7f2;
+  display: inline;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  font-family: sans-serif;
 }
 
 /* Carousel */
 .carousel {
   position: relative;
   width: 90%;
-  max-width: 800px;
   aspect-ratio: 16 / 9;
   margin: auto;
   margin-bottom: 10px;
@@ -108,4 +131,24 @@
   max-width: 90%;
   max-height: 90%;
   border-radius: 10px;
+}
+
+@media (max-width: 650px) {
+
+  .contenidoNosotros{
+    padding-top: 30px;
+  }
+
+  .seccionGeneral{
+    padding: 20px;
+  }
+
+  h1{
+    margin-bottom: 10px;
+  }
+
+  .seccionGeneral h2{
+    margin-bottom: 0px;
+    padding: 0px;
+  }
 }

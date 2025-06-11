@@ -1,0 +1,134 @@
+.relative-container {
+  background-color: hsl(211, 61%, 86%, 0.8);
+  color: #333;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  bottom: 0;
+  border-radius: 8px;
+  border: #3484e0 2px solid;
+  width: calc(100% - 4%);
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: calc(var(--header-height) + 20px);
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  
+}
+
+.relative-container h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(30px, 3.5vw, 40px);
+  color: #e24a4a;
+  text-align: center;
+  display: inline-block;
+  border-bottom: 2px solid #e24a4a;
+  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+    1px 1px 1px #000, 2px 2px 4px #000;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* los align-items de infoBody y tipo son para centrar los elementos y apilarlos de forma horizontal*/
+/*display: flex; flex-direction: column; en .relative-container y .infoBody son para que los elementos se apilen verticalmente.*/
+
+.infoBody {
+  width: 100%;
+  text-align: center;
+  display: block;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.tiposInfo {
+  text-align: center;
+  border-radius: 8px;
+  background-color: #f7d5d5;
+  border: #448fd9 solid 2px;
+  padding: 30px;
+  display: block;
+  width: 90%;
+  margin-bottom: 1em;
+  align-items: center;
+  margin: 0 auto 1em auto;
+}
+
+.relative-container h2 {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: clamp(24px, 3.5vw, 30px);
+  color: #3484e0;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto 20px auto;
+  border-bottom: 2px solid #448fd9; 
+  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+    1px 1px 1px #000, 2px 2px 4px #000;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.h5-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.h5-wrapper h5 {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(18px, 3.5vw, 24px);
+  color: #448fd9;
+  border-bottom: 2px solid #bb4949;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.relative-container p {
+  padding-top: 30px;
+  text-align: inherit;
+  font-size: clamp(16px, 3.5vw, 20px);
+  font-family: inherit;
+  font-weight: inherit;
+  color: #435050;
+}
+
+@media (max-width: 1150px) {
+  .relative-container {
+    width: 100%;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    bottom: 0;
+    margin-top: calc(var(--header-height));
+    margin-bottom: 0;
+  }
+
+  .tiposInfo {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .relative-container h2 {
+    display: inline-block;        
+    margin: 0 auto 20px auto;            
+    border-bottom: 2px solid #448fd9;    
+    font-size: clamp(24px, 3.5vw, 30px);
+    color: #3484e0;
+    text-align: center;
+    text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+                1px 1px 1px #000, 2px 2px 4px #000;
+  }
+
+  .relative-container .tiposInfo h5 {
+    display: block; /* Cada h5 ocupa su propia línea */
+    text-align: center;        
+    border-bottom: 2px solid #bb4949;
+    padding-bottom: 5px;
+    font-size: 16px;
+    color: #448fd9;
+  }
+}

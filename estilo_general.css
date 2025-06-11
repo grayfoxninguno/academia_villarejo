@@ -32,6 +32,7 @@ body{
 #header h2 {
   animation: aparecer 1s ease-out forwards;
   opacity: 0;
+  font-family: math;
 }
 
 @keyframes aparecer {
@@ -90,10 +91,10 @@ li{
   padding: clamp(3px, 3.5vw, 5px) clamp(6px, 3vw, 10px);
   border-radius: 5px;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(52, 55, 224, 0.5);
   backdrop-filter: blur(4px);
   color: white;
-  border: 2px solid black;
+  border: 2px solid #3437e0;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -104,6 +105,7 @@ li{
   }
 
 .nav-a {
+  font-family: sans-serif;
   padding: 10px 15px;
   color: rgb(230, 230, 230);
   text-decoration: none;
@@ -121,13 +123,13 @@ li{
 
 .nav-a:hover {
   background: #FFF5E1;
-  color: #448fd9;
+  color: #2071a7f2;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   border-radius: 5px;
   width: 100%;
   display: flex;
   justify-content: center;
-
+  text-shadow: none;
 }
 
 #footer {
@@ -138,7 +140,6 @@ li{
   font-weight: bold;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   align-items: center;
-  z-index: 1000;
 }
 
 #footer nav div {
@@ -154,8 +155,6 @@ li{
   padding: 10px 15px;
   color: rgb(230, 230, 230);
   text-decoration: none;
-  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
-    1px 1px 1px rgb(5, 77, 160), 2px 2px 4px #000;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -168,7 +167,7 @@ li{
 
 .nav-b:hover {
   background: #FFF5E1;
-  color: #448fd9;
+  color: #2071a7f2;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   border-radius: 5px;
   width: 100%;
@@ -198,12 +197,10 @@ li{
 #redes nav p {
   font-size: 20px;
   font-weight: bold;
-  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
-    1px 1px 1px rgb(39, 91, 150), 2px 2px 4px #000;
 }
 
 /* Responsive */
-@media (max-width: 1170px) {
+@media (max-width: 1260px) {
 
   #directorio{
     width: 10%;
@@ -217,6 +214,10 @@ li{
     display: inline-block;
   }
 
+  .nav-a:hover{
+    background: white;
+  }
+
   .nav-links {
     opacity: 0;
     transform: scaleY(0.95);
@@ -224,12 +225,12 @@ li{
     
     display: flex;
     flex-direction: column;
-    background: rgba(133, 115, 115, 1);
+    background: rgb(164, 165, 216);
     position: absolute;
     width: 200px;
     padding: 0px;
     top: 50px;
-    outline: #000000 2px solid;
+    outline: #3437e0 2px solid;
     border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     z-index: 5;
