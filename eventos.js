@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   actualizarPadding();
   window.addEventListener("resize", actualizarPadding);
 
+  /*
   document
     .getElementById("emailForm")
     .addEventListener("submit", function (event) {
@@ -33,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       window.location.href = mailtoLink;
     });
-});
+});*/
 
 /* Menu desplegable */
 const menu = document.querySelector('.nav-links');

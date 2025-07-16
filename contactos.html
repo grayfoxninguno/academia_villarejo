@@ -31,17 +31,17 @@
           <div id="tituloCaja">
             <h2>Mandanos un mensaje</h2>
           </div>
-          <form action="https://formsubmit.co/info@laacademiavillarejo.es" method="POST">
+          <form target="_blank" action="https://formsubmit.co/info@laacademiavillarejo.es" method="POST">
             <label>Nombre:
-              <input type="text" name="nombre" required>
+              <input type="text" name="nombre" placeholder="Nombre completo" required>
             </label>
             <label>
               Tu Correo:
-              <input type="email" id="email" name="email" required />
+              <input type="email" id="email" name="email" placeholder="Dirección de Email" required />
             </label>
             <label>
               Mensaje:
-              <textarea id="message" name="mensaje" required></textarea>
+              <textarea id="message" name="mensaje" placeholder="Tu mensaje" rows="10" required></textarea>
             </label>
             <button class="boton" type="submit"><b>Enviar</b></button>
           </form>
