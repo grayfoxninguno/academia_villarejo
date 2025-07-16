@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
   actualizarPadding();
   window.addEventListener("resize", actualizarPadding);
 
+  
+});
+
 /* Menu desplegable */
 const menu = document.querySelector('.nav-links');
 const toggleBtn = document.querySelector(".menu-toggle");
