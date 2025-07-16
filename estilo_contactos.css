@@ -1,25 +1,24 @@
 .contenidoContactos {
   background-color: hsl(211, 61%, 86%, 0.8);
   color: #333;
-  width: calc(100% - 4%);
-  margin-left: 2%;
-  margin-right: 2%;
+  width: 95%;
   align-items: center;
   flex-direction: column;
   display: flex;
   bottom: 0;
   border-radius: 8px;
   border: #3484e0 2px solid;
-  margin-top: calc(var(--header-height) + 20px);
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 100px;
   margin-bottom: 30px;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 
 .contenidoContactos h1 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(25px, 5vw, 45px);
-  border-bottom: 2px solid #e24a4a;
-  margin-top: 30px;
+  font-size: clamp(28px, 5vw, 45px);
   color: #e24a4a;
   text-align: center;
   display: inline-block;
@@ -32,9 +31,9 @@
 
 .contacto {
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   margin-bottom: 80px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   padding: 20px;   
   width: 100%;
@@ -43,21 +42,11 @@
 #emailForm {
   margin-bottom: 30px;
   width: 50%;
-  padding: 10px;
-  background: linear-gradient(
-    to bottom,
-    #4a90e2 13%,
-    #4a90e2 14%,
-    #222 14%,
-    #ce8f8f 15%,
-    #ce8f8f 100%
-  );
   color: #333;
-  border: 2px solid #bb4949;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  
+  padding: 10px;   
 }
 
 #message{
@@ -67,14 +56,36 @@
   overflow: auto;
 }
 
+#tituloCaja{
+  border: 2px solid #bb4949;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  background: linear-gradient(135deg, #00247D 0%, #CF142B 50%, #FFFFFF 100%);
+  padding: 10px 20px;
+}
+
+form{
+  background: #eee9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-right: 2px solid #bb4949;
+  border-left: 2px solid #bb4949;
+  border-bottom: 2px solid #bb4949;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 5px 50px;
+}
+
 label {
+  width: 100%;
   display: block; 
   font-size: 20px;
   color: #448fd9;
   text-align: left;
-  margin-right: 10px;
   padding-top: 20px;
-  margin-left: 40px;
   margin-bottom: 10px;
   text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
     1px 1px 1px rgb(39, 91, 150), 2px 2px 4px #000;
@@ -99,43 +110,53 @@ textarea {
   padding: 5px;
 }
 
-button {
-  background-color: #4a90e2;
-  color: #073569;
-  text-align: center;
-  border: none;
+
+.boton {
+  all: unset;
   cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  font-size: clamp(16px, 2vw, 20px);
-  padding: 10px;
-  border-radius: 8px;
+  width: 70%;
+  text-align: center;
+  margin: 10px 0px;
+  font-size: 20px;
+  padding: 10px 15px;
+  background: #ffffff;
+  color: #448fd9;
+  outline: #448fd9 2px solid;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-family: sans-serif;
 }
 
-button:hover {
-  background-color: #3a7bbf;
+.boton:hover {
+  cursor: pointer;
   color: #ffffff;
+  background-color: #448fd9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  outline: rgb(34, 115, 208) 1px solid;
+  border-radius: 5px;
 }
 
 .contactoTexto {
-  width: 50%;
+  width: 35%;
   padding: 10px;
-  background: linear-gradient(
-    to bottom,
-    #4a90e2 20%,
-    #4a90e2 21%,
-    #222 21%,
-    #ce8f8f 22%,
-    #ce8f8f 100%  
-  );
-  color: #333;
-  border: 2px solid #bb4949;
-  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+#informacion{
+  background: #eee9ff;
+  border-left: 2px solid #bb4949;
+  border-right: 2px solid #bb4949;
+  border-bottom: 2px solid #bb4949;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .contactoTexto h2, #emailForm h2{
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: math;
   font-size: 26px;
-  color: #bb4949;
+  color: #ffffff;
   text-align: center;
   text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
     1px 1px 1px #000, 2px 2px 4px #000;
@@ -163,12 +184,12 @@ button:hover {
   margin-left: 40px;
   text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
     1px 1px 1px rgb(39, 91, 150), 2px 2px 4px #000;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .contactoTexto #informacion a {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #e2e2e2;
   text-align: left;
   margin-right: 10px;
@@ -183,8 +204,7 @@ button:hover {
 }
 
 .localizaciones {
-  width: 90%;
-  text-align: center;
+  width: 80%;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -204,90 +224,100 @@ button:hover {
 }
 
 .localizacion {
-  width: 80%;
+  width: 100%;
   text-align: center;
   display: inline-flex;
-  flex-direction: row;
   align-items: center;
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
   border-radius: 8px;
   border: #3a3636 4px solid;
-  background: linear-gradient(
-    90deg,
-    #4a90e2 46%,
-    #4a90e2 47%,
-    #bb4949 47%,
-    #bb4949 100%
-  );
+  
 }
 
 .textoLocalizacion {
   width: 45%;
-  text-align: left;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: #333;
   font-size: 20px;
-  margin-left: 30px;
+  background: linear-gradient(135deg, #00247D 0%, #CF142B 50%, #FFFFFF 100%);
 }
 
 .textoLocalizacion h4 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 20px;
-  color: #bb4949;
+  font-size: 26px;
+  color: #f3f3f3;
   text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
     1px 1px 1px #000, 2px 2px 4px #000;
   display: inline-block;
-  border-bottom: #bb4949 2px solid;
   padding-bottom: 5px;
   text-align: left;
 }
 
 .textoLocalizacion p {
   padding-top: 10px;
-  text-align: left;
-  font-size: 16px;
-  font-family: "Arial", sans-serif;
-  color: #3a3636;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(10px, 5vw, 16px);
+  color: #e2e2e2;
+  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+  1px 1px 1px #000, 2px 2px 4px #000;
 }
 
-.localizacion iframe {
+.ubicacion {
+  padding: 20px 30px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  width: 55%;
+  background: #4a90e2;
+}
+
+iframe{
+  width: 100%;
   border-radius: 8px;
-  width: 50%;
-  margin-right: 20px;
-  margin-left: 12px;
-  border: #4a90e2 2px solid;
-  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 100px) {
+@media (max-width: 400px) {
+  iframe{
+    height: 250px;
+  }
+}
+
+@media (max-width: 900px) {
   .contacto{
-    display: contents;
+    flex-direction: column;
+    align-items: center;
   }
 
-  #emailForm{
-    margin-bottom: 50px;
+  .localizacion{
+     flex-direction: column;
   }
 
-  .contactoTexto{
-    margin-bottom: 50px;
+  .textoLocalizacion{
+    width: 100%;
+  }
+
+  .ubicacion{
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 3px;
   }
 }
 
-@media (max-width: 1150px) {
-  .contenidoContactos {
-    width: 100%;
-    margin-top: calc(var(--header-height));
-    margin-left: 0;
-    margin-right: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    bottom: 0;
+@media (max-width: 1260px) {
+  .contenidoContactos{
+    padding-top: 30px;
   }
 
-  .contactoTexto,
-  #emailForm {
+  h1{
+    margin-bottom: 10px;
+  }
+
+  #emailForm, .contactoTexto {
     width: 90%;
+    min-width: 290px;
   }
 
   
