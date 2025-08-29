@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <link rel="stylesheet" type="text/css" href="./estilo_general.css" />
-    <link rel="stylesheet" type="text/css" href="./estilo_sobre_nosotros.css" />
+    <link rel="stylesheet" type="text/css" href="./estilo_inicio.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Academia Villarejo</title>
@@ -23,48 +23,64 @@
         </nav>
       </div>
     </header>
-    <section class="contenidoNosotros">
 
+    <section class="relative-container">
       <h1>Sobre Nosotros</h1>
 
       <div class="seccionGeneral">
         <h2>
-          ¿Qué es Lorem Ipsum?<br><br>
-          Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-          Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) 
-          desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien 
-          ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 
-          "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye 
-          versiones de Lorem Ipsum.<br><br><br>
+          Somos una academia dedicada a ofrecer apoyo académico de calidad a estudiantes de todas las edades. 
+          Nuestro objetivo es ayudar a nuestros alumnos a mejorar su rendimiento, ganar confianza y alcanzar sus metas educativas.<br><br>
 
-          ¿Por qué lo usamos?<br><br>
-          Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar 
-          Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". 
-          Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, 
-          y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han 
-          evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+          Ofrecemos clases de apoyo escolar para los más pequeños, adaptándonos a sus necesidades y ritmo de aprendizaje, 
+          reforzando materias clave como lengua y matemáticas.<br><br>
+
+          También contamos con clases de inglés para todas las edades y niveles, desde niños hasta adultos, 
+          enfocándonos tanto en el aprendizaje práctico del idioma como en la preparación para exámenes oficiales.<br><br>
+
+          Además, impartimos clases especializadas de asignaturas de ciencias, 
+          orientadas tanto a estudiantes de secundaria y bachillerato.
+        </h2>  
+        <img src="imagenes/estudiante.jpg" />
+      </div>
+
+      <hr class="divider-gradient">
+
+      <h1>Clases Presenciales</h1>
+
+      <div class="seccionGeneral2">
+        <img src="imagenes/clasepresencial.png" />
+      </div>
+
+      <div class="seccionGeneral">
+        <h2>
+          Nuestra academia ofrece un entorno cómodo, cercano y motivador donde el aprendizaje fluye de forma natural y efectiva.<br><br>
+
+          Contamos con un equipo docente profesional que utiliza métodos actualizados y materiales adecuados para cualquiera de las clases.
         </h2>
-
-        <div class="carousel">
-          <div class="carousel-images" id="carouselImages">
-            <img src="imagenes/pasillo_entrada.jpg" alt="Imagen 1" onclick="abrirModal(this.src)">
-            <img src="imagenes/entrada.jpg" alt="Imagen 1" onclick="abrirModal(this.src)">
-            <img src="imagenes/pasillo.jpg" alt="Imagen 2" onclick="abrirModal(this.src)">
-            <img src="imagenes/aula.jpg" alt="Imagen 3" onclick="abrirModal(this.src)">
-          </div>
-          <div class="carousel-buttons">
-            <button onclick="moverCarrusel(-1)">❮</button>
-            <button onclick="moverCarrusel(1)">❯</button>
-          </div>
-        </div>
+        <img src="imagenes/clasepresencial.png" />
       </div>
 
-      <!-- Modal -->
-      <div class="modal" id="modal" onclick="cerrarModal()">
-        <img id="modalImg" src="" alt="Imagen ampliada">
+      <a href="./presencial.html" class="boton">Saber más</a>
+
+      <hr class="divider-gradient">
+
+      <h1>Clases a distancia</h1>
+
+      <div class="seccionGeneral2">
+        <img src="imagenes/clasetelematica.png" />
       </div>
 
-      
+      <div class="seccionGeneral">  
+        <img src="imagenes/clasetelematica.png" />
+        <h2>
+          En nuestra academia también ofrecemos clases a distancia, pensadas para quienes necesitan flexibilidad sin renunciar a una enseñanza de calidad. 
+          Gracias a nuestra experiencia y compromiso, hemos logrado que nuestras clases online sean tan efectivas como las presenciales.
+        </h2>
+      </div>
+
+      <a href="./online.html" class="boton">Saber más</a>
+
     </section>
     <footer id="footer">
       <div id="redes">

@@ -199,6 +199,14 @@ li{
   font-weight: bold;
 }
 
+.divider-gradient {
+  width: 90%;
+  border: 0;
+  height: 2.5px;
+  background: linear-gradient(to right, #40aef8, #ff7272);
+  margin: 40px 0;
+}
+
 /* Responsive */
 @media (max-width: 1260px) {
 
@@ -243,4 +251,12 @@ li{
     transform: scaleY(1);
     pointer-events: all;
   }
+}
+
+@media (max-width: 650px) {
+
+  .divider-gradient{
+    margin: 20px 0px;   
+  }
+
 }

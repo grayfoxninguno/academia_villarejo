@@ -1,19 +1,13 @@
 .contenidoContactos {
   background-color: hsl(211, 61%, 86%, 0.8);
-  color: #333;
-  width: 95%;
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-  bottom: 0;
-  border-radius: 8px;
-  border: #3484e0 2px solid;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  margin-top: 100px;
-  margin-bottom: 30px;
-  padding-top: 50px;
-  padding-bottom: 20px;
+    color: #333;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    bottom: 0;
+    padding-top: 150px;
+    padding-bottom: 20px;
 }
 
 .contenidoContactos h1 {
@@ -33,18 +27,17 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
-  padding: 20px;   
-  width: 100%;
+  margin-bottom: 50px;
+  width: 95%;
 }
 
 #emailForm {
-  margin-bottom: 30px;
   width: 50%;
   color: #333;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  padding: 10px;   
+  padding: 0px 10px;   
 }
 
 #message{
@@ -55,40 +48,38 @@
 }
 
 #tituloCaja{
-  border: 2px solid #bb4949;
+  border: 2px solid #FF8A65;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 
-  background: linear-gradient(135deg, #00247D 0%, #CF142B 50%, #FFFFFF 100%);
+  background: #BF360C;
   padding: 10px 20px;
 }
 
 form{
-  background: #eee9ff;
+  background: #FBE9E7;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-right: 2px solid #bb4949;
-  border-left: 2px solid #bb4949;
-  border-bottom: 2px solid #bb4949;
+  border-right: 2px solid #FF8A65;
+  border-left: 2px solid #FF8A65;
+  border-bottom: 2px solid #FF8A65;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   padding: 5px 50px;
+  height: 420px;
 }
 
 label {
   width: 100%;
   display: block; 
-  font-size: 20px;
-  color: #448fd9;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: #BF360C;
   text-align: left;
   padding-top: 20px;
   margin-bottom: 10px;
-  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
-    1px 1px 1px rgb(39, 91, 150), 2px 2px 4px #000;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
 }
 
 input,
@@ -104,10 +95,8 @@ textarea {
   font-size: 15px;
   width: 100%;
   background-color: #ffffff;
-  color: #000;
-  border: 2px solid #4a90e2;
+  border: 2px solid #FF8A65;
   margin-top: 5px;
-  padding: 5px;
 }
 
 
@@ -120,8 +109,8 @@ textarea {
   font-size: 20px;
   padding: 10px 15px;
   background: #ffffff;
-  color: #448fd9;
-  outline: #448fd9 2px solid;
+  color: #BF360C;
+  outline: #FF8A65 2px solid;
   border-radius: 5px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   text-decoration: none;
@@ -131,27 +120,28 @@ textarea {
 .boton:hover {
   cursor: pointer;
   color: #ffffff;
-  background-color: #448fd9;
+  background-color: #BF360C;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-  outline: rgb(34, 115, 208) 1px solid;
+  outline: #FF8A65 2px solid;
   border-radius: 5px;
 }
 
 .contactoTexto {
   width: 35%;
-  padding: 10px;
+  padding: 0px 10px;
   display: flex;
   flex-direction: column;
 }
 
 #informacion{
-  background: #eee9ff;
-  border-left: 2px solid #bb4949;
-  border-right: 2px solid #bb4949;
-  border-bottom: 2px solid #bb4949;
+  background: #FBE9E7;
+  border-left: 2px solid #FF8A65;
+  border-right: 2px solid #FF8A65;
+  border-bottom: 2px solid #FF8A65;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   padding: 10px 30px;
+  height: 420px;
 }
 
 .contactoTexto h2, #emailForm h2{
@@ -165,40 +155,35 @@ textarea {
 
 .contactoTexto div h3 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  color: #448fd9;
+  font-size: 25px;
+  color: #BF360C;
   text-align: left;
   padding-top: 20px;
   margin-left: 10px;
   margin-bottom: 10px;
-  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
-    1px 1px 1px rgb(39, 91, 150), 2px 2px 4px #000;
 }
 
 .contactoTexto #informacion p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color: #e2e2e2;
+  font-size: clamp(15px, 3vw, 20px);
+  color: #BF360C;
   text-align: left;
   margin-left: 15px;
-  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
-    1px 1px 1px rgb(39, 91, 150), 2px 2px 4px #000;
   margin-bottom: 20px;
 }
 
 .contactoTexto #informacion a {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  color: #e2e2e2;
+  font-size: clamp(15px, 3vw, 20px);
+  color: #BF360C;
   text-align: left;
   padding-top: 20px;
   margin-left: 15px;
-  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
-    1px 1px 1px rgb(39, 91, 150), 2px 2px 4px #000;
 }
 
 .contactoTexto #informacion a:hover {
-  color: #448fd9;
+  color: #ff3c00;
+  
 }
 
 
@@ -217,7 +202,7 @@ table {
   }
 
   thead {
-    background: linear-gradient(135deg, #00247D 0%, #CF142B 50%, #FFFFFF 100%);
+    background: #BF360C;
     color: white;
     text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
     1px 1px 1px rgb(39, 91, 150), 2px 2px 4px #000;
@@ -236,25 +221,13 @@ table {
   padding-bottom: 30px;
 }
 
-.localizaciones h3 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 24px;
-  color: #4a90e2;
-  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
-    1px 1px 1px #000, 2px 2px 4px #000;
-  display: inline-block;
-  border-bottom: #4a90e2 2px solid;
-  padding-bottom: 5px;
-  text-align: left;
-}
-
 .localizacion {
   width: 100%;
   text-align: center;
   display: inline-flex;
   align-items: center;
   border-radius: 8px;
-  border: #3a3636 4px solid;
+  border: #9575CD 4px solid;
   
 }
 
@@ -266,9 +239,10 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #333;
   font-size: 20px;
-  background: linear-gradient(135deg, #00247D 0%, #CF142B 50%, #FFFFFF 100%);
+  background: #4A148C;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .textoLocalizacion h4 {
@@ -296,21 +270,32 @@ table {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   width: 55%;
-  background: #4a90e2;
+  background: #EDE7F6;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 iframe{
   width: 100%;
-  border-radius: 8px;
+  border-radius: 4px;
+  outline: #9575CD 2px solid;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 423px) {
   iframe{
     height: 250px;
+  }
+
+  #informacion{
+    height: 450px;
   }
 }
 
 @media (max-width: 900px) {
+  .contenidoContactos{
+    padding-top: 110px;
+  }
+
   .contacto{
     flex-direction: column;
     align-items: center;
@@ -322,6 +307,9 @@ iframe{
 
   .textoLocalizacion{
     width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0px;
   }
 
   .ubicacion{
@@ -329,21 +317,21 @@ iframe{
     border-top-right-radius: 0px;
     border-bottom-left-radius: 3px;
   }
+
 }
 
 @media (max-width: 1260px) {
-  .contenidoContactos{
-    padding-top: 30px;
-  }
-
   h1{
     margin-bottom: 10px;
   }
 
   #emailForm, .contactoTexto {
-    width: 90%;
+    width: 95%;
     min-width: 290px;
   }
 
+  #emailForm{
+    margin-bottom: 30px;
+  }
   
 }
