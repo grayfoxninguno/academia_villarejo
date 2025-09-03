@@ -35,7 +35,7 @@ h1{
 }
 
 .seccionGeneral2{
-  width: 70%;
+  width: 80%;
   margin-bottom: 15px;
   display: none;
 }
@@ -59,7 +59,7 @@ h1{
   border: 2px solid #0480d3f2;
 }
 
-.seccionGeneral h2{
+.seccionGeneral p{
   flex: 1;
   margin-top: 15px;
   width: 55%;
@@ -67,10 +67,7 @@ h1{
   color: #2071a7f2;
   display: inline;
   text-align: left;
-  /*text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
-    1px 1px 1px #000;*/
   margin-bottom: 20px;
-  margin-top: 0px;
   padding: 0px 20px;
   font-family: sans-serif;
 }
@@ -85,7 +82,7 @@ h1{
 
 .boton {
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: clamp(15px, 2.8vw, 30px);
   padding: 10px 15px;
   background: #ffffff;
   color: #448fd9;
@@ -105,7 +102,7 @@ h1{
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 700px) {
 
   .relative-container{
     padding-top: 110px;
@@ -113,10 +110,11 @@ h1{
 
   .seccionGeneral{
     padding: 15px 15px;
-    width: 70%;
+    width: 80%;
   }
 
-  .seccionGeneral h2{
+  .seccionGeneral p{
+    margin-top: 0px;
     margin-bottom: 0px;
     padding: 0px;
   }

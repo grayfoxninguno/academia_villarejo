@@ -87,7 +87,7 @@ li{
 .menu-toggle {
   display: none;
   text-decoration: none;
-  font-size: clamp(10px, 3.5vw, 20px);
+  font-size: 20px;
   padding: clamp(3px, 3.5vw, 5px) clamp(6px, 3vw, 10px);
   border-radius: 5px;
   cursor: pointer;
@@ -158,9 +158,8 @@ li{
   width: 100%;
   display: flex;
   justify-content: center;
-
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 5px;
   
   transition: background 0.3s, transform 0.2s;
 }
@@ -182,6 +181,10 @@ li{
   justify-content: center;
 }
 
+#redes nav div{
+  margin: 0px 20px;
+}
+
 #redes nav a {
   display: flex;
   align-items: center;
@@ -191,7 +194,7 @@ li{
 #redes nav img {
   width: 30px;
   height: 30px;
-  margin: 0 0 0 7px;
+  /*margin: 0 0 0 7px;*/
 }
 
 #redes nav p {
