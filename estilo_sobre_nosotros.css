@@ -78,7 +78,7 @@
   flex: 1;
   margin-top: 15px;
   width: 55%;
-  font-size: clamp(15px, 2.8vw, 30px);
+  font-size: clamp(15px, 2.8vw, 28px);
   color: #2071a7f2;
   display: inline;
   text-align: left;
@@ -95,7 +95,7 @@
   flex: 1;
   margin-top: 15px;
   width: 100%;
-  font-size: clamp(15px, 2.8vw, 30px);
+  font-size: clamp(15px, 2.8vw, 28px);
   color: #2071a7f2;
   display: inline;
   text-align: left;
@@ -105,6 +105,7 @@
 
 .seccionGeneral img{
   margin-top: 30px;
+  max-height: 400px;
 }
 
 .fotos {
@@ -121,6 +122,7 @@
 .carousel {
   position: relative;
   width: 75%;
+  max-width: 1000px;
   aspect-ratio: 16 / 9;
   margin: auto;
   margin-bottom: 70px;
