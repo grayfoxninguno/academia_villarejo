@@ -83,7 +83,7 @@ h1{
 
 .boton {
   margin-bottom: 30px;
-  font-size: clamp(15px, 2.8vw, 25px);
+  font-size: clamp(15px, 2.8vw, 18px);
   padding: 10px 15px;
   background: #ffffff;
   color: #448fd9;

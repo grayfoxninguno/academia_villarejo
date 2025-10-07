@@ -60,3 +60,11 @@ function abrirModal(src) {
 function cerrarModal() {
   document.getElementById("modal").style.display = "none";
 }
+
+function scrollToSection(id) {
+  const element = document.getElementById(id);
+  const menuHeight = document.querySelector('nav').offsetHeight; // altura del menú
+  const y = element.getBoundingClientRect().top + window.pageYOffset - menuHeight;
+
+  window.scrollTo({ top: y, behavior: 'smooth' });
+}

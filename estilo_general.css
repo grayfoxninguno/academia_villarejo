@@ -2,10 +2,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  overflow: auto;
 }
 
 body{
-  background-image: url(imagenes/fondo.png);
+  background-image: url(imagenes/fondo.jpg);
   background-repeat: repeat;
   background-size: auto;
   display: grid;
