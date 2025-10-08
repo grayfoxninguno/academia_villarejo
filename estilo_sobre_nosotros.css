@@ -155,8 +155,8 @@
   justify-content: space-between;
   transform: translateY(-50%);
   padding: 0 1rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  /*opacity: 0;
+  transition: opacity 0.3s ease;*/
   pointer-events: none;
   z-index: 2;
 }
@@ -174,7 +174,7 @@
   padding: 0.3em 0.6em;
   cursor: pointer;
   border-radius: 5px;
-  z-index: 3;           /* por si acaso, los mantiene sobre la imagen */
+  z-index: 3;
 }
 
 .carousel-buttons button:hover {
