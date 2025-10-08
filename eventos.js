@@ -1,4 +1,4 @@
-/*document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const header = document.getElementById("header");
   window.addEventListener("scroll", function () {
     if (window.scrollY > 50) {
@@ -19,7 +19,7 @@
   window.addEventListener("resize", actualizarPadding);
 
   
-});*/
+});
 
 /* Menu desplegable */
 const menu = document.querySelector('.nav-links');

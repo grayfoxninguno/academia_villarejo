@@ -144,6 +144,7 @@
   flex-shrink: 0;
   object-fit: cover;
   cursor: pointer;
+  z-index: 1;
 }
 
 .carousel-buttons {
@@ -157,14 +158,15 @@
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
+  z-index: 2;
 }
 
 .carousel:hover .carousel-buttons {
   opacity: 1;
-  pointer-events: auto;
 }
 
 .carousel-buttons button {
+  pointer-events: auto;
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
   color: white;
@@ -172,6 +174,7 @@
   padding: 0.3em 0.6em;
   cursor: pointer;
   border-radius: 5px;
+  z-index: 3;           /* por si acaso, los mantiene sobre la imagen */
 }
 
 .carousel-buttons button:hover {
