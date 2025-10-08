@@ -7,7 +7,7 @@
 
 .imgsummer {
   width: 100%;
-  background-color: #ff3d6e;
+  background-color: #3b3a3a;
 }
 
 .imgsummer img{
@@ -23,7 +23,7 @@
 }
 
 .summer-semanas {
-  background-image: url(imagenes/fondo.jpg);
+  background-image: url(imagenes/crayons.png);
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -141,7 +141,7 @@ a{
 }
 
 .semana4 {
-  background-color: #fffbe6;
+  background-color: #ffffff;
   border: 8px solid #E0A800;
   display: flex;
   justify-content: center; 
@@ -165,7 +165,7 @@ a{
 }
 
 .semana4:hover h3{
-  color: #fffbe6;
+  color: #ffffff;
 }
 
 .semana1body {
