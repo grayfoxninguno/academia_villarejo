@@ -3,6 +3,7 @@
   margin: 0 auto;
   bottom: 0;
   margin-top: calc(var(--header-height));
+  background-color: #3b3a3a;
 }
 
 .imgsummer {
@@ -22,8 +23,49 @@
   margin-bottom: 20px;
 }
 
-.summer-semanas {
+#intro{
+  width: 100%;
   background-image: url(imagenes/crayons.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#explicacion{
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.caja_texto{
+  background-image: url(imagenes/pizarra.jpg);
+  padding: 30px;
+  border-radius: 4px;
+  outline: 10px solid #A0522D;
+}
+
+.caja_texto p{
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(12px, 5vw, 20px);
+  color: white;
+  width: 100%;
+}
+
+.caja_texto h1{
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(20px, 5vw, 28px);
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 20px;
+  text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
+    1px 1px 1px #000, 2px 2px 4px #000;
+}
+
+.summer-semanas {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -58,7 +100,7 @@ a{
 
 .semana1{
   background-color: #f0f8ff;
-  border: 8px solid #649bda;
+  border: 8px solid #2f67a9;
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -71,13 +113,13 @@ a{
   font-family: "Poppins", sans-serif;
   font-size: clamp(18px, 5vw, 24px);
   font-weight: bold;
-  color: #649bda;
+  color: #2f67a9;
   /*text-shadow: -1px -1px 1px #001f43, 1px -1px 1px #000, -1px 1px 1px #000,
     1px 1px 1px #001f43, 2px 2px 4px #001f43;*/
 }
 
 .semana1:hover{
-  background-color: #649bda;
+  background-color: #2f67a9;
 }
 
 .semana1:hover h3{
@@ -171,7 +213,7 @@ a{
 .semana1body {
   border-top: 4px solid #ffffff;
   padding: 40px;
-  background-color: #4A90E2;
+  background-color: #2f67a9;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   display: inline-flex;
   align-items: flex-start;
@@ -295,14 +337,14 @@ a{
 }
 
 .registrarse{
-  background-color: rgba(75, 75, 75, 0.9);
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    gap: 40px;
-    border-top: 3px solid #E0A800;
+  background: linear-gradient(rgba(75, 75, 75, 0.9)), url(imagenes/fondo.jpg);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+  border-top: 3px solid #E0A800;
 }
 
 .registrarse h1 {
