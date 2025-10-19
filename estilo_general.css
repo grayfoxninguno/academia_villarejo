@@ -216,6 +216,14 @@ li{
 }
 
 /* Responsive */
+
+@media (max-height: 600px) {
+  #header{
+    position: relative;
+    margin-bottom: -80px;
+  }
+}
+
 @media (max-width: 1260px) {
 
   #directorio{
