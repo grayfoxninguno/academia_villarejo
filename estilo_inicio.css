@@ -23,7 +23,7 @@ h1{
   margin-right: 30px;
 }
 
-.seccionGeneral{
+.seccionGeneral, .seccionGeneral3{
   width: 90%;
   padding: 20px 20px;
   display: inline-flex;
@@ -34,13 +34,13 @@ h1{
   border: #3484e0 2px solid;
 }
 
-.seccionGeneral2{
+.seccionGeneral2, .seccionGeneral4{
   width: 80%;
   margin-bottom: 15px;
   display: none;
 }
 
-.seccionGeneral img {
+.seccionGeneral img, .seccionGeneral3 img{
   flex: 1;
   width: 45%;
   max-height: 500px;
@@ -52,7 +52,7 @@ h1{
   margin-left: 10px;
 }
 
-.seccionGeneral2 img {
+.seccionGeneral2 img, .seccionGeneral4 img {
   flex: 1;
   width: 100%;
   border-radius: 8px;
@@ -60,7 +60,7 @@ h1{
   border: 2px solid #0480d3f2;
 }
 
-.seccionGeneral p{
+.seccionGeneral p, .seccionGeneral3 p{
   flex: 1;
   margin-top: 15px;
   width: 55%;
@@ -103,6 +103,28 @@ h1{
 }
 
 /* Responsive */
+@media (max-width: 900px){
+  .seccionGeneral3{
+    padding: 15px 15px;
+    width: 80%;
+  }
+
+  .seccionGeneral3 p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+
+  .seccionGeneral3 img{
+    display: none;
+  }
+
+  .seccionGeneral4{
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 700px) {
 
   .relative-container{

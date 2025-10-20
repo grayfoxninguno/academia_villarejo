@@ -79,7 +79,7 @@ a{
 }
 
 #Art, #Science, #Sport, #English{
-  scroll-margin-top: 126px; /* Altura del menú fijo */
+  scroll-margin-top: 120px; /* Altura del menú fijo */
 }
 
 .semana1,
@@ -448,6 +448,12 @@ a{
 b{
   text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
     1px 1px 1px #000, 2px 2px 4px #000;
+}
+
+@media (max-height: 600px){
+  #Art, #Science, #Sport, #English{
+    scroll-margin-top: 20px; /* Altura del menú fijo */
+  }
 }
 
 @media (max-width: 900px){

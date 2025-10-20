@@ -82,9 +82,6 @@
   .contenidoNoticias {
     padding-top: 110px;
   }
-}
-
-@media (max-width: 1150px) {
 
   .noticia {
     flex-direction: column;
@@ -100,5 +97,4 @@
   .noticiaTexto {
     width: 100%;
   }
-
 }
